@@ -45,6 +45,6 @@ app.get("/covid-data", function (req, res, next) {
 });
 
 //listen to server
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("server starts!");
 });
