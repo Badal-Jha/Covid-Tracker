@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="stylesheet" href="../CSS/style.css" />
+     <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>covid tracker</title>
+  </head>
+  <body>
+    {{>header}}
+      
+      <div class="container">
+        <div class="first">
+          <h1>Real Time Covid Data Tracker</h1>
+           <p>Here you can find Real Time Covid Data off All the states and it's each district
+              India . To see complete list statewise you can click the link on navigation menu. 
+              To find the Data of perticuler state search it in the search Box below.
+           </p>
+           <label for="input" >
+             <input type="text" class="search" placeholder="Name of state" >
+            
+             <button id="search-btn">search</button>
+           </label>
+         
+       
+        </div>
+        <div class="second">
+          <img src="/images/virus_img.png" alt="" class="rotate">
+           <img src="/images/virus_img.png" alt="" id="imgRes" class="rotate">
+        </div>
+      </div>
+      <div class="stats">
+       <table class="table hidden">
+        <tr class="table-header" >
+          <th>State</th>
+          <th>Confirmed</th>
+          <th>Deceased</th>
+          <th>Recovered</th>
+          <th>Tested</th>
+          <th>Vaccinated</th>
+        </tr>
+      
+      </table>
+      </div>
+    {{>footer}}
+    <script src="../js/main.js"></script>
+    <script src="../js/header.js"></script>
+  </body>
+</html>
