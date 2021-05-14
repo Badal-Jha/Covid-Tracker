@@ -72,7 +72,7 @@ const stateNameAbr = (state) => {
   }
 };
 
-const URL = "http://localhost:3000/covid-data";
+const URL = "/covid-data";
 const coviData = async (state, name) => {
   if (!state) return;
   const jsonData = await fetch(URL);

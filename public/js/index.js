@@ -1,6 +1,6 @@
 const table = document.querySelector(".table");
 
-const URL = "http://localhost:3000/covid-data";
+const URL = "/covid-data";
 
 table.innerHTML = `<tr class="table-header">
 <th>State</th>

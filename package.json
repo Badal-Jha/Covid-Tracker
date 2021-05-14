@@ -4,7 +4,7 @@
   "description": "This is A application for covid data ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js"
   },
   "author": "Badal Jha",
   "license": "ISC",
