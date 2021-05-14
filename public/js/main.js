@@ -70,6 +70,7 @@ const stateNameAbr = (state) => {
       return key;
     }
   }
+  return null;
 };
 
 const URL = "/covid-data";
@@ -100,6 +101,10 @@ btn.addEventListener("click", (e) => {
   table.classList.remove("hidden");
   console.log(string);
   const name = string[0].toUpperCase() + string.slice(1);
-
-  coviData(stateNameAbr(name), name);
+  if (stateNameAbr(name) == null) {
+    alert("please provide a valid name!");
+    input.value = "";
+  } else {
+    coviData(stateNameAbr(name), name);
+  }
 });
